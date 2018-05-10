@@ -5,7 +5,7 @@
 }
 
 a {
-    color: inherit;
+    color: Animatable;
     text-decoration: none;
 }
 
@@ -21,27 +21,27 @@ body {
     max-width: 900px;
     background-color: #fff;
     margin: 0 auto;
-    padding: 0 60px;
+    padding: 0 100px;
+    display: grid;
+    grid-template-areas:
 
-    /* display: grid; */
-    /* grid-template-columns: 3fr 1fr;
-    grid-template-areas:  */
-        "header header"
+        "header header "
         "main sidebar"
-        "footer footer";
-    /* grid-gap: 60px; */
+        "footer Footer ";
+
+    grid-gap: 60px;
 }
 
 /* Header */
 
 header{
-    /* grid-area: header; */
+    grid-area: header;
 
     color: #ef5350;
     padding: 20px 0;
 
-    /* display: grid; */
-    /* grid-template-columns: 1fr 1fr; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 header nav {
@@ -60,9 +60,9 @@ header nav li {
     display: inline-block;
 }
 
-header button {
+header INPUT {
     justify-self: end;
-
+    float: right;
     background-color: #ef5350;
     border: none;
     padding: 8px 25px;
@@ -74,7 +74,7 @@ header button {
 /* Main Section */
 
 .main {
-    /*grid-area: main;*/
+    grid-area: main;
 
     text-align: center;
 }
@@ -96,16 +96,20 @@ header button {
 /* Sidebar */
 
 .sidebar {
-    /* grid-area: sidebar; */
+    grid-area: sidebar;
 
     border: 1px solid #a2a2a2;
     padding: 20px;
 }
 
+/*Menu*/
+
+
+
 /* Footer */
 
 footer {
-  /*  grid-area: footer;*/
+    grid-area: footer;
 
     color: #ef5350;
     text-align: center;
@@ -119,14 +123,14 @@ footer p {
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     .container{
         /*  Redefine the grid into a single column layout. */
-        /* grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
         grid-template-areas:
             "header"
             "main"
             "sidebar"
-            "footer"; */
+            "footer";
     }
 }

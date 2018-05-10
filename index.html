@@ -5,19 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CSS Grid Layout</title>
     <link rel="stylesheet" type="text/css" href="css-grid-layout.css">
+    <script language=JavaScript>
+var numberOfClicks = 0;
+
+function myButton_onclick() {
+   numberOfClicks++;
+   window.document.form1.myButton.value = 'GO! GO! GO!---> ' + numberOfClicks ;
+}
+</script>
 </head>
-<body>
+
+
+  <div  class="">
+
+  </div>
 
 
 <div class="container">
-        
+
     <header>
         <nav>
-            <li><a href="#"><h1>Header</h1></a></li>
-            <li><a href="#">Link</a></li>
-            <li><a href="#">Link</a></li>
+            <li><a href="#"><h1>Fortnite</h1></a></li>
+            <li><a href="http://www.epicgames.com/fortnite/es-ES/faq">FAQ</a></li>
+            <li><a href="http://www.epicgames.com/fortnite/es-ES/home">Official</a></li>
         </nav>
-        <button>Button</button>
+      <FORM NAME=form1>
+        <INPUT TYPE='button' NAME='myButton' VALUE='Get to 1 million'
+   onclick="myButton_onclick()">
+        <form>
     </header>
 
     <section class="main">
@@ -25,11 +40,15 @@
 
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
 
-        <img src="https://unsplash.it/500/550?image=116">        
+        <img src="main.jpg">
     </section>
 
     <aside class="sidebar">
         <h3>Sidebar</h3>
+    </aside>
+    <aside class="menu">
+        <h3>Menu</h3>
+        <ul></ul>
     </aside>
 
     <footer>
